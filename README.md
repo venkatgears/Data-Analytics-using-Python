@@ -21,8 +21,8 @@ Before you begin, ensure you have:
 
 **Option A: Using Git**
 ```bash
-git clone <repository-url>
-cd walmart-data-science-course
+git clone git@github.com:venkatgears/Data-Analytics-using-Python.git
+cd data-analytics-using-python
 ```
 
 **Option B: Download ZIP**
@@ -76,35 +76,6 @@ python -c "import pandas, numpy, sklearn, jupyter; print('✅ All packages insta
 
 ---
 
-## 📊 Download the Dataset
-
-The notebooks require the **Walmart Sales Dataset** from Kaggle.
-
-### Steps to Download:
-
-1. Go to [Kaggle Walmart Dataset](https://www.kaggle.com/datasets/yasserh/walmart-dataset)
-2. Log in (create an account if needed)
-3. Click **Download** button
-4. Extract the ZIP file
-5. Copy `Walmart.csv` to the `data/` folder in this project:
-
-```
-walmart-data-science-course/
-├── data/
-│   └── Walmart.csv  ← Place the file here
-├── notebooks/
-├── README.md
-└── requirements.txt
-```
-
-**Verify the file exists:**
-```bash
-ls data/Walmart.csv         # macOS/Linux
-dir data\Walmart.csv        # Windows PowerShell
-```
-
----
-
 ## ▶️ Running the Notebooks
 
 ### Start Jupyter Notebook
@@ -126,8 +97,7 @@ Your browser will open automatically to `http://localhost:8888`.
 ### Navigate to Notebooks
 
 1. In the Jupyter interface, click on the **notebooks/** folder
-2. Open `Walmart_Data_Science_Industry_Workshop (1).ipynb` (main 4-hour workshop)
-   - OR explore individual modules: `01_python_basics.ipynb`, `02_data_understanding.ipynb`, etc.
+2. Open `Titanic.ipynb` to start with the basics
 
 ### Run Cells
 
@@ -139,43 +109,8 @@ Your browser will open automatically to `http://localhost:8888`.
 
 ## 📖 What Each Notebook Covers
 
-### **01_python_basics.ipynb**
-- Python fundamentals: variables, data types, loops, functions
-- Lists, tuples, and dictionaries
-- String manipulation
-
-### **02_data_understanding.ipynb**
-- Loading data with pandas
-- Exploring dataset structure
-- Summary statistics and data profiling
-- Identifying missing values and correlations
-
-### **03_data_cleaning.ipynb**
-- Handling missing values
-- Removing duplicates
-- Detecting and handling outliers
-- Data type conversions
-- Feature scaling
-
-### **04_visualization.ipynb**
-- Matplotlib and seaborn basics
-- Creating histograms, scatter plots, box plots
-- Correlation heatmaps
-- Best practices for effective visualizations
-
-### **05_machine_learning.ipynb**
-- Train-test split
-- Linear Regression
-- Classification algorithms
-- Model evaluation metrics
-- Cross-validation
-
-### **Walmart_Data_Science_Industry_Workshop (1).ipynb** ⭐ (Main 4-hour workshop)
-- Complete hands-on experience with real Walmart data
-- Data loading → Cleaning → EDA → Feature Engineering → Modeling
-- Multiple practice exercises throughout
-- Executive discussion and business recommendations
-
+1. **Titanic.ipynb** – Introduction to data science concepts using the Titanic dataset
+2. **Healthcare_Insurance.ipynb** – Data cleaning and exploratory data analysis with healthcare insurance data
 ---
 
 ## 🐛 Troubleshooting
@@ -194,12 +129,6 @@ Your browser will open automatically to `http://localhost:8888`.
 ```bash
 pip install jupyter --upgrade
 ```
-
-### Issue: "Walmart.csv not found"
-**Solution:**
-- Double-check the file is in `data/` folder
-- Check filename spelling and extension (.csv)
-- Verify with `ls data/` or `dir data\`
 
 ### Issue: Import errors (e.g., "No module named pandas")
 **Solution:**
@@ -234,7 +163,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn plotly
    - Verify Jupyter runs
 
 2. **Learning** (4 hours)
-   - Open `Walmart_Data_Science_Industry_Workshop (1).ipynb`
+   - Open notebooks in order
    - Work through each section
    - Complete practice exercises
    - Run all cells to see outputs
@@ -268,13 +197,3 @@ After completing this workshop, you will:
 
 ---
 
-## 🚀 Next Steps
-
-Once you've completed the workshop:
-1. Try building your own model on different datasets
-2. Explore advanced machine learning algorithms
-3. Deploy your model as a web API
-4. Create interactive dashboards with Plotly Dash
-5. Contribute to open-source data science projects
-
-Happy learning! 🎉
