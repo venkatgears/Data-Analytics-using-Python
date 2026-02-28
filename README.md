@@ -1,6 +1,6 @@
-# 📚 Setup Guide – Walmart Data Science Workshop
+# 📚 Setup Guide 
 
-This guide will help you set up your environment and run the Jupyter notebooks for the Walmart Data Science course.
+This guide will help you set up your environment and run the Jupyter notebooks 
 
 ---
 
